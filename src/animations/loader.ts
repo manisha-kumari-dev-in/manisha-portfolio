@@ -24,7 +24,7 @@ export const animateLoader = ({
       y: 0,
       duration: 0.8,
       ease: "power3.out",
-    }
+    },
   )
     .fromTo(
       text,
@@ -35,7 +35,7 @@ export const animateLoader = ({
         duration: 0.6,
         ease: "power3.out",
       },
-      "-=0.3"
+      "-=0.3",
     )
     .to(loader, {
       opacity: 0,

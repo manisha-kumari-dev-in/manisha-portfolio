@@ -26,9 +26,7 @@ const NavLinks = ({ active }: Props) => {
             <a
               href={item.href}
               className={`text-sm font-medium transition ${
-                isActive
-                  ? "text-white"
-                  : "text-white/60 hover:text-white"
+                isActive ? "text-white" : "text-white/60 hover:text-white"
               }`}
             >
               {item.label}
