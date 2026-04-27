@@ -1,20 +1,22 @@
 import { useEffect, useRef } from "react";
-import { animateHeroImage } from "../../animations/hero";
+import { animateHero } from "../../animations/hero";
 
 const Hero = () => {
   const imageCardRef = useRef<HTMLDivElement | null>(null);
+  const textRef = useRef<HTMLDivElement | null>(null);
 
-  useEffect(() => {
-    if (!imageCardRef.current) return;
+useEffect(() => {
+  if (!textRef.current || !imageCardRef.current) return;
 
-    const animation = animateHeroImage({
-      image: imageCardRef.current,
-    });
+  const tl = animateHero({
+    text: textRef.current,
+    image: imageCardRef.current,
+  });
 
-    return () => {
-      animation.kill();
-    };
-  }, []);
+  return () => {
+    tl.kill();
+  };
+}, []);
 
   return (
     <section
@@ -26,18 +28,20 @@ const Hero = () => {
       </div>
 
       <div className="mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-10 md:grid-cols-2">
-        <div className="flex w-full flex-col items-center text-center md:items-start md:text-left">
+        <div ref={textRef} className="flex w-full flex-col items-center text-center md:items-start md:text-left">
           <p className="text-sm font-medium uppercase tracking-[0.2em] text-white/60">
-            Software Engineer
+            Software Engineer • Platform & DevOps
           </p>
 
-          <h1 className="mt-6 text-5xl font-semibold tracking-tight text-white md:text-7xl">
-            I build tools that eliminate busywork.
+          <h1 className="mt-5 text-5xl font-semibold tracking-tight text-white md:text-7xl">
+            I build systems that reduce friction in development.
           </h1>
 
-          <p className="mt-6 max-w-xl text-base leading-8 text-white/70 md:text-lg">
-            I reduce friction, automate workflows, and improve developer
-            productivity. If it can be automated, I automate it.
+          <p className="mt-5 max-w-xl text-base leading-8 text-white/70 md:text-lg">
+            I automate workflows, streamline tooling, and improve developer productivity.
+            <span className="block mt-2 text-white font-medium">
+              If it can be automated, I automate it.
+            </span>
           </p>
 
           <div className="mt-10 flex items-center gap-4">
@@ -51,7 +55,7 @@ const Hero = () => {
               href="#contact"
               className="rounded-full border border-white/15 px-6 py-3 text-sm font-medium text-white transition hover:bg-white/5"
             >
-              Let’s Talk
+              Get in Touch
             </a>
           </div>
 
