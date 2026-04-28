@@ -2,6 +2,7 @@ import { useState } from "react";
 import Loader from "./components/common/loader";
 import { Navbar } from "./components/common/navbar";
 import Hero from "./sections/hero/Hero";
+import About from "./sections/about/About";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -16,12 +17,7 @@ function App() {
         <main className="bg-black text-white">
           <Hero />
 
-          <section
-            id="about"
-            className="flex min-h-screen items-center justify-center"
-          >
-            About
-          </section>
+          <About />
 
           <section
             id="skills"

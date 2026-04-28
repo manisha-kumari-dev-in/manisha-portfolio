@@ -16,8 +16,8 @@ export const animateHero = ({ text, image }: AnimateHeroParams) => {
       y: 0,
       duration: 0.9,
       ease: "power3.out",
-      stagger: 0.20,
-    }
+      stagger: 0.2,
+    },
   );
 
   tl.fromTo(
@@ -30,7 +30,7 @@ export const animateHero = ({ text, image }: AnimateHeroParams) => {
       duration: 1.1,
       ease: "power3.out",
     },
-    "-=0.5"
+    "-=0.5",
   );
 
   tl.add(() => {
