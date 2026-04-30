@@ -9,7 +9,3 @@ html {
 body {
   @apply bg-black text-white antialiased;
 }
-
-section {
-  scroll-margin-top: 6rem;
-}
