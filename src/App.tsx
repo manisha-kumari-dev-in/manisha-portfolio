@@ -4,6 +4,7 @@ import { Navbar } from "./components/common/navbar";
 import Hero from "./sections/hero/Hero";
 import About from "./sections/about/About";
 import Skills from "./sections/skills/Skills";
+import Projects from "./sections/projects/Projects";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -22,12 +23,7 @@ function App() {
 
           <Skills />
 
-          <section
-            id="projects"
-            className="flex min-h-screen items-center justify-center"
-          >
-            Projects
-          </section>
+          <Projects />
 
           <section
             id="experience"
