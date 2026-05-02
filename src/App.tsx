@@ -5,6 +5,8 @@ import Hero from "./sections/hero/Hero";
 import About from "./sections/about/About";
 import Skills from "./sections/skills/Skills";
 import Projects from "./sections/projects/Projects";
+import Experience from "./sections/experience/Experience";
+import Contact from "./sections/contact/Contact";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -25,19 +27,9 @@ function App() {
 
           <Projects />
 
-          <section
-            id="experience"
-            className="flex min-h-screen items-center justify-center"
-          >
-            Experience
-          </section>
+          <Experience />
 
-          <section
-            id="contact"
-            className="flex min-h-screen items-center justify-center"
-          >
-            Contact
-          </section>
+          <Contact />
         </main>
       )}
     </>

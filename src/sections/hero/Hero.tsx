@@ -80,7 +80,7 @@ const Hero = () => {
             <img
               src="/hero-image.png"
               alt="Manisha Kumari"
-              className="h-[34rem] w-[26rem] rounded-[1.5rem] object-cover"
+              className="h-[32rem] w-[24rem] rounded-[1.5rem] object-cover"
             />
           </div>
         </div>
