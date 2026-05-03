@@ -33,7 +33,7 @@ const Loader = ({ onComplete }: LoaderProps) => {
       <div className="-translate-y-6">
         <img
           ref={imageRef}
-          src="/preview-image.png"
+          src="/loader-image.png"
           alt="Loading Portfolio"
           className="w-52 rounded-3xl shadow-2xl select-none md:w-64"
         />
