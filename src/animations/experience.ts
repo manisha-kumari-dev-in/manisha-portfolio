@@ -26,7 +26,7 @@ export const animateExperience = (container: HTMLDivElement) => {
       duration: 0.9,
       stagger: 0.12,
       ease: "power3.out",
-    }
+    },
   ).fromTo(
     items,
     { opacity: 0, y: 28 },
@@ -37,7 +37,7 @@ export const animateExperience = (container: HTMLDivElement) => {
       stagger: 0.14,
       ease: "power3.out",
     },
-    "-=0.45"
+    "-=0.45",
   );
 
   return tl;

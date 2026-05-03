@@ -8,7 +8,8 @@ export type ProjectLink = {
 
 export const ProjectLinks = ({ links = [] }: { links?: ProjectLink[] }) => {
   if (!links.length) return null;
-  const base = "flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-white/[0.02] transition hover:border-white/20 hover:bg-white/[0.06] hover:scale-105";
+  const base =
+    "flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-white/[0.02] transition hover:border-white/20 hover:bg-white/[0.06] hover:scale-105";
 
   return (
     <div className="flex items-center gap-2 sm:gap-3">

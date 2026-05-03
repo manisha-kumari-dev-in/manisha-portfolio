@@ -59,15 +59,13 @@ export const featuredProjects: FeaturedProject[] = [
     description:
       "Built a responsive and interactive portfolio website to showcase my work and skills.",
     stack: ["React", "TypeScript", "Tailwind CSS", "GSAP"],
-    impact: [
-       "Showcases my projects and skills in a visually appealing way",
-    ],
+    impact: ["Showcases my projects and skills in a visually appealing way"],
     links: [
-          {
-            type: "github",
-            url: "https://github.com/manisha-kumari-dev-in/manisha-portfolio"
-          }
-    ]
+      {
+        type: "github",
+        url: "https://github.com/manisha-kumari-dev-in/manisha-portfolio",
+      },
+    ],
   },
 ];
 

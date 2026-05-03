@@ -1,10 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { ChevronDown } from "lucide-react";
 
-import {
-  featuredProjects,
-  archivedProjects,
-} from "./projects.data";
+import { featuredProjects, archivedProjects } from "./projects.data";
 
 import { projectsAnimations } from "../../animations/projects";
 import { attachTilt } from "../../animations/tilt";
@@ -52,9 +49,7 @@ const Projects = () => {
           Featured Work
         </p>
 
-        <h2 className="mt-4 text-5xl font-semibold md:text-6xl">
-          Projects
-        </h2>
+        <h2 className="mt-4 text-5xl font-semibold md:text-6xl">Projects</h2>
 
         <p className="mt-5 leading-8 text-white/60">
           Systems built across platform engineering and automation.
@@ -131,9 +126,7 @@ const Projects = () => {
                 >
                   <div className="overflow-hidden">
                     <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-4">
-                      <p className="text-xs uppercase text-white/40">
-                        Impact
-                      </p>
+                      <p className="text-xs uppercase text-white/40">Impact</p>
 
                       <ul className="mt-4 space-y-3">
                         {p.impact?.map((i) => (

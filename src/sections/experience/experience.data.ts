@@ -24,7 +24,7 @@ export const experiences: Experience[] = [
       "CI/CD",
       "NewRelic",
       "JFrog Artifactory",
-      "Cortex"
+      "Cortex",
     ],
     points: [
       "Contributed to internal platform tooling focused on developer productivity, workflow automation, and release reliability.",

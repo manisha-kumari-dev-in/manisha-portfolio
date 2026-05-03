@@ -21,7 +21,6 @@ import unitTestIcon from "../../assets/icons/unit-test.svg";
 import integrationTestIcon from "../../assets/icons/integration-test.svg";
 import e2eTestIcon from "../../assets/icons/e2e-test.svg";
 
-
 export const skillGroups = [
   {
     title: "Languages",
@@ -56,9 +55,9 @@ export const skillGroups = [
     title: "Testing",
     icon: testingIcon,
     skills: [
-        { name: "Unit Testing", icon: unitTestIcon },
-        { name: "Integration Testing", icon: integrationTestIcon },
-        { name: "E2E Testing", icon: e2eTestIcon },
+      { name: "Unit Testing", icon: unitTestIcon },
+      { name: "Integration Testing", icon: integrationTestIcon },
+      { name: "E2E Testing", icon: e2eTestIcon },
     ],
   },
 ];

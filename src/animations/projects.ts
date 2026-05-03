@@ -44,7 +44,7 @@ export const projectsAnimations = {
           duration: motion.duration.medium,
           stagger: 0.12,
           ease: motion.ease.primary,
-        }
+        },
       );
   },
 
@@ -67,7 +67,7 @@ export const projectsAnimations = {
           stagger: 0.05,
           duration: motion.duration.medium,
         },
-        "-=0.1"
+        "-=0.1",
       );
     } else {
       tl.to(container, {

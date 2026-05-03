@@ -8,8 +8,8 @@ export const attachTilt = (selector: string) => {
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
 
-      const rotateX = ((y / rect.height) - 0.5) * -6;
-      const rotateY = ((x / rect.width) - 0.5) * 6;
+      const rotateX = (y / rect.height - 0.5) * -6;
+      const rotateY = (x / rect.width - 0.5) * 6;
 
       el.style.transform = `
         perspective(800px)

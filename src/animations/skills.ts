@@ -25,7 +25,7 @@ export const animateSkills = (container: HTMLDivElement) => {
           startFloating(cards);
         },
       },
-    }
+    },
   );
 
   const startFloating = (items: NodeListOf<HTMLElement>) => {

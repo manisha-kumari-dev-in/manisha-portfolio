@@ -33,7 +33,7 @@ export const animateContact = (container: HTMLDivElement) => {
       scale: 1,
       duration: 0.9,
       ease: "power3.out",
-    }
+    },
   )
     .fromTo(
       [eyebrow, heading, subheading],
@@ -45,7 +45,7 @@ export const animateContact = (container: HTMLDivElement) => {
         stagger: 0.1,
         ease: "power3.out",
       },
-      "-=0.55"
+      "-=0.55",
     )
     .fromTo(
       links,
@@ -57,7 +57,7 @@ export const animateContact = (container: HTMLDivElement) => {
         stagger: 0.1,
         ease: "power3.out",
       },
-      "-=0.35"
+      "-=0.35",
     );
 
   gsap.to(shell, {

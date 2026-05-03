@@ -11,7 +11,7 @@ import Contact from "./sections/contact/Contact";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
-  
+
   useEffect(() => {
     history.replaceState(null, "", window.location.pathname);
     window.scrollTo(0, 0);
@@ -38,7 +38,6 @@ function App() {
           <Contact />
 
           <Footer />
-
         </main>
       )}
     </>

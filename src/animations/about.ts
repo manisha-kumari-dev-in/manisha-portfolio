@@ -23,7 +23,7 @@ export const animateAbout = (el: HTMLElement) => {
       duration: 0.9,
       stagger: 0.28,
       ease: "power3.out",
-    }
+    },
   );
 
   return tl;
