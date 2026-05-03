@@ -2,8 +2,7 @@
 
 ## 🚧 Status
 
-Project is currently in the initial setup phase.
-Development in progress...
+Project is live on [https://manisha-kumari.vercel.app/](https://manisha-kumari.vercel.app/)
 
 ## 🛠️ Tech Stack
 
@@ -44,7 +43,20 @@ manisha-portfolio/
 ├── node_modules/          # Installed dependencies (auto-generated)
 ├── public/                # Static assets (served as-is)
 ├── src/
+│   ├── animations/        # GSAP / animation logic
 │   ├── assets/            # Images, icons, etc.
+│   ├── components/
+│   │   └── common/
+│   │       ├── footer/
+│   │       ├── loader/
+│   │       └── navbar/
+│   ├── sections/          # Page sections
+│   │   ├── hero/
+│   │   ├── about/
+│   │   ├── skills/
+│   │   ├── projects/
+│   │   ├── experience/
+│   │   └── contact/
 │   ├── App.tsx            # Main app component
 │   ├── main.tsx           # Application entry point
 │   └── index.css          # Global styles (Tailwind imported here)
