@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Loader from "./components/common/loader";
 import { Navbar } from "./components/common/navbar";
+import Footer from "./components/common/footer";
 import Hero from "./sections/hero/Hero";
 import About from "./sections/about/About";
 import Skills from "./sections/skills/Skills";
@@ -10,6 +11,11 @@ import Contact from "./sections/contact/Contact";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+  
+  useEffect(() => {
+    history.replaceState(null, "", window.location.pathname);
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
@@ -18,7 +24,7 @@ function App() {
       <Navbar />
 
       {!isLoading && (
-        <main className="bg-black text-white">
+        <main className="min-h-screen flex flex-col bg-black text-white">
           <Hero />
 
           <About />
@@ -30,6 +36,9 @@ function App() {
           <Experience />
 
           <Contact />
+
+          <Footer />
+
         </main>
       )}
     </>
