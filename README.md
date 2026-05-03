@@ -78,3 +78,6 @@ manisha-portfolio/
 ## 👤 Author
 
 **Manisha Kumari**
+
+## ⚖️ License
+This project is *All Rights Reserved*. You may use the code for inspiration or review, but please do not clone or use it as a template for your own site. See [LICENSE](./LICENSE) for full details.
