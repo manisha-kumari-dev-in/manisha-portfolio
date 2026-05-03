@@ -31,7 +31,7 @@ export const featuredProjects: FeaturedProject[] = [
     type: "Platform Engineering",
     year: "2026",
     description:
-      "Extended VConfig, an internal developer platform used across engineering to standardize local setup, automate service workflows, and simplify AI tooling adoption.",
+      "Extended an internal developer platform used across engineering to standardize local setup, automate service workflows, and simplify AI tooling adoption.",
     stack: [
       "Go",
       "CI/CD",
@@ -80,12 +80,12 @@ export const archivedProjects: ArchivedProject[] = [
     stack: ["Agents.md", "SKILL.md"],
   },
   {
-    id: "pxe-bulk-sync-utility-2025",
-    title: "Bulk Sync Utility",
+    id: "bulk-syncing-utility-2025",
+    title: "Bulk Syncing Utility",
     type: "Internal Automation",
     year: "2025",
     summary:
-      "Built a bulk sync utility for the PXE team to simplify Cortex updates after reorg changes and reduce repetitive operational work.",
-    stack: ["Go", "CLI"],
+      "Built a bulk syncing utility for the team to simplify Cortex updates to reduce repetitive operational work.",
+    stack: ["Go", "CLI", "Cortex API"],
   },
 ];
