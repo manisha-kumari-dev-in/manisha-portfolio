@@ -44,12 +44,12 @@ const Skills = () => {
               {group.skills.map((skill) => (
                 <div
                   key={skill.name}
-                  className="skill-chip group flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-3 py-1.5 text-xs text-white/75 transition-all duration-200 hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/[0.05] hover:text-white md:px-4 md:py-2 md:text-sm"
+                  className="skill-chip group flex items-center gap-2 rounded-full border border-white/20 bg-white/[0.08] px-3.5 py-2 text-sm text-white transition-all duration-200 hover:-translate-y-0.5 hover:border-white/25 hover:bg-white/[0.1] md:border-white/10 md:bg-white/[0.03] md:px-4 md:py-2 md:text-sm md:text-white/75 md:hover:bg-white/[0.05]"
                 >
                   <img
                     src={skill.icon}
                     alt={skill.name}
-                    className="h-4 w-4 object-contain opacity-70 transition-opacity duration-200 group-hover:opacity-100 md:h-5 md:w-5"
+                    className="h-4 w-4 object-contain opacity-100 transition-opacity duration-200 md:h-5 md:w-5 md:opacity-70 md:group-hover:opacity-100"
                   />
                   <span>{skill.name}</span>
                 </div>
