@@ -25,7 +25,9 @@ const Navbar = () => {
         if (!el) return false;
 
         const rect = el.getBoundingClientRect();
-        return rect.top <= 120 && rect.bottom >= 120;
+        const trigger = window.innerHeight * 0.3;
+
+        return rect.top <= trigger && rect.bottom >= trigger;
       });
 
       if (current) setActive(current);

@@ -8,19 +8,20 @@ const Hero = () => {
   useEffect(() => {
     if (!textRef.current || !imageCardRef.current) return;
 
-    const tl = animateHero({
+    const cleanup = animateHero({
       text: textRef.current,
       image: imageCardRef.current,
     });
 
     return () => {
-      tl.kill();
+      cleanup();
     };
   }, []);
 
   return (
     <section
       id="hero"
+       aria-labelledby="hero-heading"
       className="relative isolate flex min-h-screen w-full items-center justify-center overflow-hidden px-6 pt-20 md:px-10 md:pt-24"
     >
       <div className="absolute inset-0 -z-10 flex items-center justify-center">
@@ -36,9 +37,12 @@ const Hero = () => {
             Software Engineer • Platform & DevOps
           </p>
 
-          <h1 className="mt-5 text-4xl font-semibold tracking-tight text-white sm:text-5xl md:text-7xl">
-            I build systems that reduce friction in development.
-          </h1>
+         <h1
+  id="hero-heading"
+  className="mt-5 text-4xl font-semibold tracking-tight text-white sm:text-5xl md:text-7xl"
+>
+  I build systems that reduce friction in development.
+</h1>
 
           <p className="mt-5 max-w-xl text-base leading-7 text-white/70 sm:text-lg sm:leading-8">
             I automate workflows, streamline tooling, and improve developer
@@ -80,7 +84,7 @@ const Hero = () => {
             <img
               src="/hero-image.png"
               alt="Manisha Kumari"
-              className="h-[32rem] w-[24rem] rounded-[1.5rem] object-cover"
+              className="w-full max-w-[24rem] h-auto rounded-[1.5rem] object-cover"
             />
           </div>
         </div>
