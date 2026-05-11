@@ -13,9 +13,8 @@ export const animateContact = (container: HTMLDivElement) => {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: container,
-      start: "top 85%",
+      start: "top 80%",
       once: true,
-      invalidateOnRefresh: true,
     },
   });
 
