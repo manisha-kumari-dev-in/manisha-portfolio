@@ -40,13 +40,13 @@ export const animateHero = ({ text, image }: AnimateHeroParams) => {
     "-=0.45",
   );
 
-const floatTween = gsap.to(image, {
-  y: -1,
-  duration: 6,
-  repeat: -1,
-  yoyo: true,
-  ease: "sine.inOut",
-});
+  const floatTween = gsap.to(image, {
+    y: -1,
+    duration: 6,
+    repeat: -1,
+    yoyo: true,
+    ease: "sine.inOut",
+  });
 
   return () => {
     tl.kill();

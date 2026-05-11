@@ -15,7 +15,7 @@ export const animateContact = (container: HTMLDivElement) => {
       trigger: container,
       start: "top 90%",
       once: true,
-      invalidateOnRefresh: true
+      invalidateOnRefresh: true,
     },
   });
 
